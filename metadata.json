@@ -1,0 +1,6 @@
+{
+  "name": "Simple E-Commerce Store",
+  "description": "A fully featured full-stack e-commerce store with product listings, shopping cart, order processing, user registration, and an admin inventory/orders dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
