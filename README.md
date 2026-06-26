@@ -6,8 +6,7 @@
 
 This contains everything you need to run your app locally.
 
-View your app in AI Studio: https://ai.studio/apps/53d5d03d-764c-4a5b-b905-2009044e09fd
-
+View your app in poojitha's e-commerce store: https://poojitha-jinkala.github.io/CodeAlpha_simple-e-commerce-store/
 ## Run Locally
 
 **Prerequisites:**  Node.js
