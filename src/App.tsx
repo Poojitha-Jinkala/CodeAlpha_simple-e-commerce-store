@@ -13,11 +13,11 @@ import { Product, User, CartItem, ShippingAddress } from './types';
 export default function App() {
   // Session states
   const [currentUser, setCurrentUser] = useState<User | null>(() => {
-    const saved = localStorage.getItem('aura_user');
+    const saved = localStorage.getItem('Poojitha_aura App_user');
     return saved ? JSON.parse(saved) : null;
   });
   const [token, setToken] = useState<string | null>(() => {
-    return localStorage.getItem('aura_token');
+    return localStorage.getItem('Poojitha_aura App_token');
   });
 
   // Navigation state
@@ -31,7 +31,7 @@ export default function App() {
 
   // Cart state
   const [cartItems, setCartItems] = useState<CartItem[]>(() => {
-    const saved = localStorage.getItem('aura_cart');
+    const saved = localStorage.getItem('Poojitha_aura App_cart');
     return saved ? JSON.parse(saved) : [];
   });
 
@@ -46,17 +46,17 @@ export default function App() {
   // Sync session with localstorage
   useEffect(() => {
     if (currentUser && token) {
-      localStorage.setItem('aura_user', JSON.stringify(currentUser));
-      localStorage.setItem('aura_token', token);
+      localStorage.setItem('Poojitha_aura App_user', JSON.stringify(currentUser));
+      localStorage.setItem('Poojitha_aura App_token', token);
     } else {
-      localStorage.removeItem('aura_user');
-      localStorage.removeItem('aura_token');
+      localStorage.removeItem('Poojitha_aura App_user');
+      localStorage.removeItem('Poojitha_aura App_token');
     }
   }, [currentUser, token]);
 
   // Sync cart with localstorage
   useEffect(() => {
-    localStorage.setItem('aura_cart', JSON.stringify(cartItems));
+    localStorage.setItem('Poojitha_aura App_cart', JSON.stringify(cartItems));
   }, [cartItems]);
 
   // Toast helper
@@ -317,7 +317,7 @@ export default function App() {
                       <span>Curated Premium Collection</span>
                     </span>
                     <h1 className="mt-4 font-sans text-3xl font-extrabold tracking-tight sm:text-5xl">
-                      Aura of Modern Living.
+                      Poojitha_aura App of Modern Living.
                     </h1>
                     <p className="mt-4 text-sm leading-relaxed text-slate-300">
                       Elegantly manufactured workspace tools, wearable tech, and sensory sound controllers. Designed for absolute focus, comfort, and minimal aesthetic harmony.
@@ -475,13 +475,13 @@ export default function App() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center space-x-2">
               <span className="font-sans text-base font-bold tracking-tight text-white">
-                AURA<span className="text-slate-500 font-normal">.store</span>
+                Poojitha_aura App<span className="text-slate-500 font-normal">.store</span>
               </span>
               <span className="text-[10px] bg-slate-800 text-slate-400 px-2.5 py-0.5 rounded-full border border-slate-700 font-mono">v1.1</span>
             </div>
             
             <p className="text-slate-500 text-center md:text-right">
-              &copy; {new Date().getFullYear()} Aura Curated Design Store. Built securely with Express.js backend and React client.
+              &copy; {new Date().getFullYear()} Poojitha_aura App Curated Design Store. Built securely with Express.js backend and React client.
             </p>
           </div>
         </div>

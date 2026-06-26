@@ -16,7 +16,7 @@ const INITIAL_PRODUCTS: Product[] = [
   },
   {
     "id": "prod-2",
-    "name": "Aura Minimalist Mechanical Keyboard",
+    "name": "Poojitha_aura App Minimalist Mechanical Keyboard",
     "description": "A beautiful tenkeyless mechanical keyboard featuring hot-swappable tactile switches, double-shot PBT keycaps, and custom ambient white LED backlighting. Housed in a premium CNC aluminum frame with high-quality acoustic dampening.",
     "price": 149.99,
     "image": "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=600&auto=format&fit=crop&q=80",
@@ -122,9 +122,9 @@ const INITIAL_DB: MockDB = {
 
 // Initialize localStorage DB if needed
 function getDB(): MockDB {
-  const data = localStorage.getItem('aura_store_db');
+  const data = localStorage.getItem('Poojitha_aura App_store_db');
   if (!data) {
-    localStorage.setItem('aura_store_db', JSON.stringify(INITIAL_DB));
+    localStorage.setItem('Poojitha_aura App_store_db', JSON.stringify(INITIAL_DB));
     return INITIAL_DB;
   }
   try {
@@ -135,7 +135,7 @@ function getDB(): MockDB {
 }
 
 function saveDB(db: MockDB) {
-  localStorage.setItem('aura_store_db', JSON.stringify(db));
+  localStorage.setItem('Poojitha_aura App_store_db', JSON.stringify(db));
 }
 
 // Token helper

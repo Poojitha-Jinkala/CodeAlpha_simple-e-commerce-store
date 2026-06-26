@@ -41,7 +41,7 @@ export default function Navbar({
               <ShoppingBag className="h-5 w-5" />
             </div>
             <span className="font-sans text-xl font-bold tracking-tight text-slate-900">
-              AURA<span className="text-indigo-600 font-medium">.store</span>
+              Poojitha_aura App<span className="text-indigo-600 font-medium">.store</span>
             </span>
           </div>
 

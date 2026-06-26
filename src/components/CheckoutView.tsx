@@ -95,7 +95,7 @@ export default function CheckoutView({
 
         <h1 className="font-sans text-3xl font-extrabold tracking-tight text-slate-900">Order Placed Successfully!</h1>
         <p className="mt-2.5 text-sm text-slate-500">
-          Thank you for shopping with AURA. We've received your order and are preparing it for shipment.
+          Thank you for shopping with Poojitha_aura App. We've received your order and are preparing it for shipment.
         </p>
 
         {/* Receipt Box */}
